@@ -3,8 +3,8 @@ const initialStorageCost = document.getElementById('storage-price');
 const initialDeliveryCharge = document.getElementById('delivery-price');
 const total = document.getElementById('total');
 const grandTotal = document.getElementById('grand-total');
-const promo = document.getElementById('promo');
-
+const promoButton = document.getElementById('promoButton');
+const promoInput = document.getElementById('promoInput');
 
 document.getElementById('8GB-memory').addEventListener('click',function(){
     mackBook(0, initialMemoryCost);
@@ -53,3 +53,20 @@ function totalPrice(){
     grandTotal.innerText = totalPrice;
     
 }
+
+
+promoButton.addEventListener('click',function(){
+    const promoText = promoInput.value;
+    const withoutDiscount = total.innerText;
+    if(promoText == 'stevekaku'){
+        const discountPrice = parseInt(withoutDiscount)*0.20;
+        const totalDiscountPrice = parseInt(withoutDiscount) - discountPrice;
+        grandTotal.innerText = totalDiscountPrice;
+
+    }
+    else{
+        alert('your promo code is not correct! please try again')
+    }
+    promoInput.innerText = '';
+   
+})

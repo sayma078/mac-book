@@ -3,6 +3,7 @@ const initialStorageCost = document.getElementById('storage-price');
 const initialDeliveryCharge = document.getElementById('delivery-price');
 const total = document.getElementById('total');
 const grandTotal = document.getElementById('grand-total');
+const promo = document.getElementById('promo');
 
 
 document.getElementById('8GB-memory').addEventListener('click',function(){
@@ -49,4 +50,6 @@ function totalPrice(){
     const deliveryCharge = initialDeliveryCharge.innerText;
     const totalPrice = bestPrice + parseInt(extraMemoryCost) + parseInt(extraStorageCost)+ parseInt(deliveryCharge);
     total.innerText = totalPrice;
+    grandTotal.innerText = totalPrice;
+    
 }

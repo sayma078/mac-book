@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apple</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class=" grid grid-cols-2 pt-20 px-14 ">
+            <div class="pl-40">
+                <img src="images/mac.png" alt="">
+
+            </div>
+            <div class="px-20 ">
+                <h1 class="font-medium text-5xl">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                <br>
+                <p class="text-xl">Apple M1 chip with 8-core CPU with performance cores and  efficiency  cores,7-core GPU,and 16-core Neural Engine 8GB unified  memory 256GB SSD storage Two Thunderbolt /USB 4 ports Magic Mouse Magic  keyboard-US English</p>
+
+                <div class="mt-5 ">
+                    
+
+                       <!-- memory part -->
+                       <div>
+                        <h1 class="font-semibold mt-1 text-xl">Memory</h1>
+                        <button id="8GB-memory" class="w-44 hover:bg-gray-300 border-black p-1 gap-10 box-border   border-2 ">8GB unified memory</button>
+                        <button id="16GB-memory" class="w-44 hover:bg-gray-300 border-black p-1 gap-10 box-border   border-2 ">16G unified memory</button>
+                        
+                       </div>
+                    
+                       <!-- storage part -->
+
+                       <div class="mt-10">
+                        <h1 class="font-semibold  text-xl">Storage</h1>
+                        <button id="256GB-storage" class="w-44 hover:bg-gray-300 border-black p-1 gap-10 box-border   border-2 ">256GB SSD Storage</button>
+                        <button id="512GB-storage" class="w-44 hover:bg-gray-300 border-black p-1 gap-10 box-border   border-2 ">512GB SSD Storage</button>
+                        <button id="1TB-storage" class="w-44 hover:bg-gray-300 border-black p-1 gap-10 box-border   border-2 ">1TB SSD Storage</button>
+                        
+                       </div>
+
+                       <!-- delivery part -->
+
+                       <div class="mt-10">
+                        <h1 class="font-semibold  text-xl">Choose your delivery option</h1>
+                        <button id="free-delivery" class="w-64 hover:bg-gray-300 border-black p-1 gap-10 box-border   border-2 ">Friday,Aug 25 FREE Prime Delivery</button>
+                        <button id="paid-delivery" class="w-64 hover:bg-gray-300 border-black p-1 gap-10 box-border   border-2">Friday,Aug 21 Delivery charge $20</button>
+                        
+                       </div>
+                    
+                </div>
+
+                  
+                  <!-- calculation part -->
+
+                <div class="grid grid-row-5 mt-10 mb-20 w-2/3">
+                    <div class="grid font-semibold mt-1 text-xl grid-cols-2">
+                     <p >Best Price</p>
+                     <p>$ 1299</p>
+                    </div><hr>
+                
+                    <div class="grid grid-cols-2 font-semibold mt-1 text-xl">
+                        <p>Extra Memory Cost</p>
+                        <p>$ <span id="memory-price"> 0 </span></p>
+                    </div> <hr>
+
+                    <div  class="grid grid-cols-2 font-semibold mt-1 text-xl">
+                        <p>Extra Storage Cost</p>
+                        <p>$ <span id="storage-price">0</span></p>
+                    </div><hr>
+
+                    <div class="grid grid-cols-2 font-semibold mt-1 text-xl">
+                        <p>Delivary charge</p>
+                        <p>$ <span id="delivery-price">0</span> </p>
+                    </div> <hr class=" border border-gray-400 ">
+                    <div  class="grid grid-cols-2 font-semibold mt-1 text-xl">
+                        <p>Total Price</p>
+                        <p>$<span id="total"> 1299 </span></p>
+                    </div>
+                    <!-- promo code  -->
+                    <div class="mt-5">
+                        <h3 class="font-semibold trxt-lg">Add promo code</h3>
+                        <div class="mt-3">
+                            <input type="text" class="border border-gray-400 px-3 py-2 rounded">
+                            <button class="border bg-red-500 rounded	 p-2">Apply</button>
+                        </div>
+                    </div>
+
+                </div>
+               </div>
+            </div>
+            
+        </section><hr class="border border-gray-400">
+        <h1 class="text-4xl text-center p-20	">Total:$<span id="grand-total">1299</span> </h1>
+    </main>
+    <script src="js/mac.js"></script>
+</body>
+</html>
